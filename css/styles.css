@@ -10,6 +10,7 @@
     --header-line-border-color: #ECECEC;
     --slogan-text-color: #FFFFFF;
     --advantages-box-background-color: #F5F4FA;
+    --works-text-color: #FFFFFF;
     --team-background-color: #F5F4FA;
     --team-icon-fill: #AFB1B8;
     --team-accent-icon-fill: #FFFFFF;
@@ -308,6 +309,80 @@ p {
 .work-list {
     display: flex;
     justify-content: space-between;
+}
+
+.work .item {
+    position: relative;
+
+    width: 370px;
+    height: 294px;
+}
+
+.work .img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.item-desktop > .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--works-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.item-mobile > .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--works-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.item-design > .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--works-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
         /* Advantages */
