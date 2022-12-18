@@ -125,9 +125,9 @@ p {
 /* Logo */
 
 .header .logo {
-        display: inline-block;
-        padding-top: 24px;
-        padding-bottom: 25px;
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -158,9 +158,9 @@ p {
 }
 
 .site-nav .link {
-        display: inline-block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     color: var(--secondary-text-color);
 }
@@ -171,7 +171,21 @@ p {
 }
 
 .site-nav .current {
+    position: relative;
     color: var(--accent-color);
+}
+
+.site-nav .current::after {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-color);
 }
 
 /* Contacts */
@@ -491,7 +505,7 @@ p {
     margin-bottom: 50px;
 }
 
-         /*Projects Portfolio*/
+        /*Projects Portfolio*/
 
 .projects-list {
     display: flex;
