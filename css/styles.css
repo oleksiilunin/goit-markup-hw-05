@@ -450,13 +450,8 @@ p {
     border-radius: 4px;
 
     transition-property: border-color;
-    transition-duration: 4250ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-color);    
 }
 
 .clients-link:hover,
@@ -471,10 +466,16 @@ p {
         
     fill: var(--clients-icon-fill);
 
-    transition-property: background-color;
-    transition-duration: 4250ms;
+    transition-property: fill;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);    
+}
+
 
         /* Portfolio - Filter */
 
