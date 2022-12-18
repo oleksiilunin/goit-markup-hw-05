@@ -163,6 +163,10 @@ p {
     padding-bottom: 32px;
     
     color: var(--secondary-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -206,7 +210,11 @@ p {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);    
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .link:hover,
@@ -432,7 +440,7 @@ p {
     height: 92px;
 }
 
-.clients .link {
+.clients-link {
     display: block; 
     width: 100%;
     height: 100%;
@@ -440,6 +448,10 @@ p {
 
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 4250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
@@ -458,6 +470,10 @@ p {
     height: 60px;
         
     fill: var(--clients-icon-fill);
+
+    transition-property: background-color;
+    transition-duration: 4250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
         /* Portfolio - Filter */
@@ -480,6 +496,10 @@ p {
     cursor: pointer;
 
     border: none;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-filter:hover,
@@ -545,6 +565,10 @@ p {
 
 .card .link{ 
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
 .card .link:hover,
@@ -597,6 +621,10 @@ p {
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover,
@@ -641,13 +669,21 @@ p {
     justify-content: center;
 }
 
-.team-socials .socials-item {
+/* .team-socials .socials-item {
     
-    background-color: var(--main-background-color);  
-}
+    background-color: var(--main-background-color);
+    
+    transition-property: background-color;
+    transition-duration: 5250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .team .link {
     fill: var(--team-icon-fill);
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socials .link:hover,
@@ -672,13 +708,17 @@ p {
     letter-spacing: 0.03em;
 }
 
-.footer-socials .socials-item {
+.footer-socials .link {
     background-color: var(--footer-icon-bcg-color);
 }
 
 .footer-socials .link:hover,
 .footer-socials .link:focus {
     background-color: var(--accent-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials .icon {
